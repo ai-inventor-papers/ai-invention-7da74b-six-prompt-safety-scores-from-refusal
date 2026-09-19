@@ -1,0 +1,208 @@
+{
+  "valid": true,
+  "file_errors": [],
+  "schema_errors": [],
+  "content_warnings": [],
+  "files_found": {
+    "research_out.json": {
+      "exists": true,
+      "path": "/ai-inventor/aii_data/runs/run_pu9PorDFCwwV/3_invention_loop/iter_1/gen_art/gen_art_research_1/research_out.json",
+      "source_count": 39,
+      "size": 38776
+    }
+  },
+  "source_count": 39,
+  "checked_at": "2026-09-19T02:21:20.744764+00:00",
+  "passage_check_scope": "Case/whitespace-normalized text occurrence at the source URL (or archive fallback). Not claim entailment, locator verification, or author/year verification. status=error means unverified, not a misquotation.",
+  "passages": [
+    {
+      "source_index": 1,
+      "source_url": "https://huggingface.co/api/models/Qwen/Qwen3-4B",
+      "quote": "\"gated\":false",
+      "locator": "HF REST API",
+      "status": "valid",
+      "context": "...\":\"qwen\",\"sha\":\"1cfa9a7208912126459214e8b04321603b3df60c\",\"lastmodified\":\"2025-07-26t03:46:39.000z\",\"gated\":false,\"disabled\":false,\"widgetdata\":[{\"text\":\"hi, what can you help me with?\"},{\"text\":\"what is 84 * 3 / ...",
+      "match_type": "exact"
+    },
+    {
+      "source_index": 4,
+      "source_url": "https://huggingface.co/api/models/huihui-ai/Qwen3-0.6B-abliterated",
+      "quote": "\"gated\":\"auto\"",
+      "locator": "HF REST API",
+      "status": "valid",
+      "context": "...ihui-ai\",\"sha\":\"b562e42866a4584f9898b889fa729f48a3269cef\",\"lastmodified\":\"2025-06-19t08:30:11.000z\",\"gated\":\"auto\",\"disabled\":false,\"widgetdata\":[{\"text\":\"hi, what can you help me with?\"},{\"text\":\"what is 84 * 3 / ...",
+      "match_type": "exact"
+    },
+    {
+      "source_index": 4,
+      "source_url": "https://huggingface.co/api/models/huihui-ai/Qwen3-0.6B-abliterated",
+      "quote": "\"downloads\":45",
+      "locator": "HF REST API",
+      "status": "valid",
+      "context": "...en/qwen3-0.6b\",\"license:apache-2.0\",\"text-generation-inference\",\"endpoints_compatible\",\"region:us\"],\"downloads\":45,\"likes\":18,\"modelid\":\"huihui-ai/qwen3-0.6b-abliterated\",\"author\":\"huihui-ai\",\"sha\":\"b562e42866a4584...",
+      "match_type": "exact"
+    },
+    {
+      "source_index": 6,
+      "source_url": "https://huggingface.co/api/models/meta-llama/Llama-3.2-1B",
+      "quote": "\"gated\":\"manual\"",
+      "locator": "HF REST API",
+      "status": "valid",
+      "context": "...a-llama\",\"sha\":\"4e20de362430cd3b72f300e6b0f18e50e7166e08\",\"lastmodified\":\"2024-10-24t15:08:03.000z\",\"gated\":\"manual\",\"disabled\":false,\"widgetdata\":[{\"text\":\"hi, what can you help me with?\"},{\"text\":\"what is 84 * 3 / ...",
+      "match_type": "exact"
+    },
+    {
+      "source_index": 8,
+      "source_url": "https://huggingface.co/api/models/google/gemma-2-2b",
+      "quote": "\"gated\":\"manual\"",
+      "locator": "HF REST API",
+      "status": "valid",
+      "context": "...\"google\",\"sha\":\"c5ebcd40d208330abc697524c919956e692655cf\",\"lastmodified\":\"2024-08-07t18:25:49.000z\",\"gated\":\"manual\",\"disabled\":false,\"widgetdata\":[{\"text\":\"hi, what can you help me with?\"},{\"text\":\"what is 84 * 3 / ...",
+      "match_type": "exact"
+    },
+    {
+      "source_index": 11,
+      "source_url": "https://abliterlitics.dev/models/qwen3-4b/",
+      "quote": "301/400| 24.8%",
+      "locator": "Safety: HarmBench table / intro",
+      "status": "valid",
+      "context": "....0`. variant| refusals| asr ---|---|--- [base](https://huggingface.co/qwen/qwen3-4b-instruct-2507)| 301/400| 24.8% [heretic](https://huggingface.co/p-e-w/qwen3-4b-instruct-2507-heretic-v4)| 3/400| 99.2% **hauhaucs,...",
+      "match_type": "exact"
+    },
+    {
+      "source_index": 11,
+      "source_url": "https://abliterlitics.dev/models/qwen3-4b/",
+      "quote": "18/400| 95.5%",
+      "locator": "Safety: HarmBench table / intro",
+      "status": "valid",
+      "context": "...*| **100.0%** [huihui](https://huggingface.co/huihui-ai/huihui-qwen3-4b-instruct-2507-abliterated)| 18/400| 95.5% harmbench overall asr ### asr by category category| base| heretic| **hauhaucs**| huihui ---|---|---...",
+      "match_type": "exact"
+    },
+    {
+      "source_index": 11,
+      "source_url": "https://abliterlitics.dev/models/qwen3-4b/",
+      "quote": "Huihui struggles on this model. It only reaches 95.5% safety removal, leaving 18 harmful requests still refused.",
+      "locator": "Safety: HarmBench table / intro",
+      "status": "valid",
+      "context": "...additional modifications, all targeting the same projection types that exist in a pure transformer. huihui struggles on this model. it only reaches 95.5% safety removal, leaving 18 harmful requests still refused. pure transformers retain safety directions in weight types that huihui doesn't touch, which the hyb...",
+      "match_type": "exact"
+    },
+    {
+      "source_index": 11,
+      "source_url": "https://abliterlitics.dev/models/qwen3-4b/",
+      "quote": "Refusals were classified via regex matching, which captured 100% of refusals cleanly",
+      "locator": "Safety: HarmBench table / intro",
+      "status": "valid",
+      "context": "... refusals, mostly in harassment_bullying at 76.0% and illegal at 86.2%. heretic retains 3 refusals. refusals were classified via regex matching, which captured 100% of refusals cleanly. qwen3-4b's lack of cot makes refusal patterns straightforward to match. results were then verified...",
+      "match_type": "exact"
+    },
+    {
+      "source_index": 12,
+      "source_url": "https://failurefirst.org/research/reports/229-qwen3-overfitting-analysis/",
+      "quote": "refuses 84.7% of AdvBench",
+      "locator": "Executive Summary",
+      "status": "valid",
+      "context": "...in any public training set, we find **strong evidence of benchmark-specific overfitting**. qwen3-8b refuses 84.7% of advbench prompts but complies with 98.3% of novel family prompts — an 83 percentage-point gap (chi-square = ...",
+      "match_type": "exact"
+    },
+    {
+      "source_index": 13,
+      "source_url": "https://arxiv.org/abs/2512.12066",
+      "quote": "28% of prompts exhibit decision flips",
+      "locator": "Abstract",
+      "status": "valid",
+      "context": "...n 876 harmful prompts across 20 sampling configurations (4 temperatures x 5 seeds), we find that 18-28% of prompts exhibit decision flips--the model refuses in some configurations but complies in others--depending on the model. our safet...",
+      "match_type": "exact"
+    },
+    {
+      "source_index": 13,
+      "source_url": "https://arxiv.org/abs/2512.12066",
+      "quote": "single-shot evaluation agrees with multi-sample ground truth only 92.5%",
+      "locator": "Abstract",
+      "status": "valid",
+      "context": "...hat evaluation protocols must account for stochastic variation in model behavior. for llama 3.1 8b, single-shot evaluation agrees with multi-sample ground truth only 92.5% of the time when pooling across temperatures (98.7% at greedy to 90.3% at temperature 1.0), and we ...",
+      "match_type": "exact"
+    },
+    {
+      "source_index": 15,
+      "source_url": "https://arxiv.org/pdf/2406.11717",
+      "quote": "we can add the difference-in-means vector to the activations of a harmless input",
+      "locator": "Section 2.4 / Appendix I",
+      "status": "valid",
+      "context": "...n modulate the strength of the corresponding feature via simple linear interventions. specifically, we can add the difference-in-means vector to the activations of a harmless input to shift them closer to the mean harmful activation, thereby inducing refusal: x(l)′ ←x(l) + r(l). ...",
+      "match_type": "exact"
+    },
+    {
+      "source_index": 16,
+      "source_url": "https://raw.githubusercontent.com/FailSpy/abliterator/main/abliterator.py",
+      "quote": "def apply_refusal_dirs",
+      "locator": "abliterator.py: apply_refusal_dirs",
+      "status": "valid",
+      "context": "...ated=max_new_tokens, **model_kwargs) if incl_bwd: model_out.backward() return model_out, cache_dict def apply_refusal_dirs( self, refusal_dirs: list[float[tensor, 'd_model']], w_o: bool = true, mlp: bool = true, layers: li...",
+      "match_type": "exact"
+    },
+    {
+      "source_index": 19,
+      "source_url": "https://arxiv.org/abs/2508.10029",
+      "quote": "pairing a harmful query with a structurally similar but benign counterpart",
+      "locator": "Abstract",
+      "status": "valid",
+      "context": "...t modify their internal representations. we introduce latent fusion jailbreak (lfj), which works by pairing a harmful query with a structurally similar but benign counterpart, then interpolating their hidden states at carefully selected layers and token positions. refusal-l...",
+      "match_type": "exact"
+    },
+    {
+      "source_index": 19,
+      "source_url": "https://arxiv.org/abs/2508.10029",
+      "quote": "LFJ reaches a macro-averaged attack success rate (ASR) of 94.13% under the white-box protocol",
+      "locator": "Abstract",
+      "status": "valid",
+      "context": "...the remaining transformer blocks. across four safety benchmarks and five open-weight target models, lfj reaches a macro-averaged attack success rate (asr) of 94.13% under the white-box protocol we describe. because lfj directly accesses internal states, comparisons with prompt-only attacks se...",
+      "match_type": "exact"
+    },
+    {
+      "source_index": 22,
+      "source_url": "https://arxiv.org/abs/2505.18325",
+      "quote": "overrefusal is closely tied to misalignment at these boundary regions",
+      "locator": "Abstract",
+      "status": "valid",
+      "context": "...he models' safety decision boundaries to analyze and mitigate overrefusal. our findings reveal that overrefusal is closely tied to misalignment at these boundary regions, where models struggle to distinguish subtle differences between benign and harmful content. buildi...",
+      "match_type": "exact"
+    },
+    {
+      "source_index": 23,
+      "source_url": "https://arxiv.org/abs/2606.25750",
+      "quote": "scores a target model by measuring whether its hidden states align with these refusal directions under unsafe and jailbreak prompts",
+      "locator": "Abstract",
+      "status": "valid",
+      "context": "...model, then selects stable layer windows where safe and unsafe behaviors are separable, and finally scores a target model by measuring whether its hidden states align with these refusal directions under unsafe and jailbreak prompts. the resulting metric, **ras** (**r**efusal **a**lignment **s**core), maps representation-level ref...",
+      "match_type": "exact"
+    },
+    {
+      "source_index": 27,
+      "source_url": "https://arxiv.org/abs/2603.18353",
+      "quote": "Linear probes discriminated hazardous from benign cases with 98.2% AUROC, yet the model's output sensitivity was only 45.1%, a 53-percentage-point knowledge-action gap",
+      "locator": "Abstract",
+      "status": "valid",
+      "context": "...egative triage errors using 400 physician-adjudicated clinical vignettes (144 hazards, 256 benign). linear probes discriminated hazardous from benign cases with 98.2% auroc, yet the model's output sensitivity was only 45.1%, a 53-percentage-point knowledge-action gap. concept bottleneck steering corrected 20% of missed hazards but disrupted 53% of correct detection...",
+      "match_type": "exact"
+    },
+    {
+      "source_index": 27,
+      "source_url": "https://arxiv.org/abs/2603.18353",
+      "quote": "SAE feature steering produced zero effect despite 3,695 significant features",
+      "locator": "Abstract",
+      "status": "valid",
+      "context": "...zards but disrupted 53% of correct detections, indistinguishable from random perturbation (p=0.84). sae feature steering produced zero effect despite 3,695 significant features. tsv steering at high strength corrected 24% of missed hazards while disrupting 6% of correct detec...",
+      "match_type": "exact"
+    },
+    {
+      "source_index": 29,
+      "source_url": "https://arxiv.org/abs/2507.11878",
+      "quote": "adversarially finetuning models to accept harmful instructions",
+      "locator": "Abstract",
+      "status": "valid",
+      "context": "...the refusal signals without reversing the model's internal belief of harmfulness. we also find that adversarially finetuning models to accept harmful instructions has minimal impact on the model's internal belief of harmfulness. these insights lead to a practica...",
+      "match_type": "exact"
+    }
+  ]
+}
