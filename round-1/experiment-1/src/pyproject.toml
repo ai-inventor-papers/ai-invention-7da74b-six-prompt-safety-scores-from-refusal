@@ -1,0 +1,30 @@
+[project]
+name = "refusal-boundary-experiment"
+version = "1.0.0"
+description = "Mechanistic screen of five refusal-safety metrics (C0-C4) plus baselines on Qwen3 base/tuned/abliterated trios via input-interpolation evidence."
+requires-python = ">=3.12"
+# All direct dependencies pinned to the exact versions installed in the
+# experiment's .venv (verified working).  The complete environment snapshot
+# (every transitive package) is frozen in requirements.lock.
+# Note: on Linux, PyPI's `torch==2.6.0` wheel IS the CUDA 12.4 build
+# (installed version string 2.6.0+cu124).
+dependencies = [
+    "torch==2.6.0",
+    "transformers==5.17.0",
+    "tokenizers==0.23.2",
+    "huggingface-hub==1.32.0",
+    "safetensors==0.8.0",
+    "accelerate==1.15.0",
+    "peft==0.21.0",
+    "numpy==2.5.3",
+    "scipy==1.18.1",
+    "scikit-learn==1.9.1",
+    "loguru==0.7.3",
+    "psutil==7.2.2",
+    "tenacity==9.1.4",
+    "tqdm==4.70.1",
+    "pyyaml==6.0.3",
+    "regex==2026.9.10",
+    "hf-xet==1.6.0",
+    "rich==15.0.0",
+]
