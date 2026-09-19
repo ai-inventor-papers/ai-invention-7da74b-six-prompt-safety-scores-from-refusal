@@ -1,0 +1,10 @@
+requests
+loguru
+numpy
+pandas
+pyarrow
+jsonschema
+tiktoken
+datasets
+transformers
+torch
