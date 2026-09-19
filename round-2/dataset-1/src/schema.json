@@ -1,0 +1,141 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://ai-inventor.local/schemas/refusal_boundary_data_out.schema.v2.json",
+  "title": "Refusal-boundary test prompts and lexicon registry (v2, tokenizer-agnostic)",
+  "description": "One row per prompt. Folds: screen_instrument (6 matched harmful/benign pairs PER tokenizer family x4: qwen3/llama32/gemma2/qwen25), confirm (reserved 60 harmful + 40 benign), lexicon_validation (20 prompts with greedy 8-token output snippets and gold refusal/compliance labels), lexicon_meta (per-family Arditi Table 4 refusal start-token sets). v2 extends the v1 type/category/fold enums and adds optional per-row tokenization metadata; v1 rows remain valid.",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+      "id",
+      "prompt",
+      "type",
+      "category",
+      "fold",
+      "source",
+      "matched_pair_id",
+      "output",
+      "gold_label"
+    ],
+    "properties": {
+      "id": {
+        "type": "string",
+        "pattern": "^(sb_si_p[0-9]{2}_[hb]|sb_cf_(viol|weap|cybe|fraud|self|chem)_[0-9]{2}|sb_cf_ben_[0-9]{2}|sb_lx_val_[0-9]{2}|sb_si2_(qwen3|llama32|gemma2|qwen25)_p[0-9]{2}_[hb]|sb_lx_meta_(qwen3|llama32|gemma2|qwen25))$"
+      },
+      "prompt": {
+        "type": "string",
+        "description": "Empty string allowed for fold=lexicon_meta rows"
+      },
+      "type": {
+        "type": "string",
+        "enum": [
+          "harmful",
+          "benign",
+          "lexicon_meta"
+        ]
+      },
+      "category": {
+        "type": "string",
+        "enum": [
+          "violence",
+          "weapons",
+          "cyber",
+          "fraud",
+          "self-harm",
+          "chemical",
+          "benign",
+          "lexicon"
+        ]
+      },
+      "fold": {
+        "type": "string",
+        "enum": [
+          "screen_instrument",
+          "confirm",
+          "lexicon_validation",
+          "lexicon_meta"
+        ]
+      },
+      "source": {
+        "type": "string",
+        "minLength": 1
+      },
+      "matched_pair_id": {
+        "type": "string",
+        "pattern": "^(pair_[0-9]{2}|)$"
+      },
+      "output": {
+        "type": "string"
+      },
+      "gold_label": {
+        "type": [
+          "string",
+          "null"
+        ],
+        "enum": [
+          "refusal",
+          "compliance",
+          null
+        ]
+      },
+      "notes": {
+        "type": "string"
+      },
+      "family": {
+        "type": "string",
+        "enum": [
+          "qwen3",
+          "llama32",
+          "gemma2",
+          "qwen25"
+        ]
+      },
+      "tokenizer": {
+        "type": "string",
+        "minLength": 1
+      },
+      "variant_id": {
+        "type": "string",
+        "minLength": 1
+      },
+      "token_count": {
+        "type": "integer",
+        "minimum": 1
+      },
+      "token_ids": {
+        "type": "array",
+        "items": {
+          "type": "integer"
+        }
+      },
+      "align_shared_fraction": {
+        "type": "number",
+        "minimum": 0,
+        "maximum": 1
+      },
+      "align_slot_start": {
+        "type": "integer",
+        "minimum": 0
+      },
+      "align_slot_end": {
+        "type": "integer",
+        "minimum": 0
+      },
+      "search_trail": {
+        "type": "string",
+        "minLength": 1
+      },
+      "decoded_start_tokens": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        }
+      },
+      "blocked_reason": {
+        "type": "string",
+        "minLength": 1
+      }
+    }
+  }
+}
